@@ -17,10 +17,18 @@ body {
 a {
   text-decoration: none;
   color: white;
+  padding-block: 7px;
+  padding-inline: 10px;
+  transition: all 50ms ease-in-out;
 }
 li {
   font-size: 14px;
   list-style-type: none;
+}
+a:hover {
+  background-color: rgba(230, 230, 230, 0.9);
+  color: black;
+  border: 1px solid black;
 }
 nav {
   position: fixed;
@@ -138,4 +146,64 @@ main {
   font-size: 16px;
   padding-block: 10px;
   padding-inline: 25px;
+}
+/* */
+.pricing-section {
+  margin-top: -60px;
+}
+.pricing-section-header {
+  font-size: 26px;
+  font-weight: 400;
+}
+.pricing {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  padding-block: 30px;
+}
+.pricing-div {
+  text-align: center;
+  background-color: gray;
+  transition: all 100ms ease-in-out;
+}
+.pricing-div h1 {
+  padding-block: 1.5em;
+  background-color: rgb(60, 59, 59);
+  color: rgb(188, 186, 186);
+}
+.pricing-text {
+  color: black;
+  padding-block: 25px;
+  border-bottom: 1px solid rgba(108, 108, 108, 0.5);
+}
+.pricing-div div {
+  border-bottom: 1px solid rgba(108, 108, 108, 0.5);
+}
+.pricing-div div h2 {
+  font-size: 2em;
+  font-weight: 400;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: black;
+}
+.pricing-div div p {
+  font-size: 14px;
+  padding-bottom: 20px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.pricing-div button {
+  font-size: 16px;
+  margin-block: 1.2em;
+  padding-block: 16px;
+  padding-inline: 2em;
+  border: none;
+  background-color: rgb(149, 147, 147);
+  transition: all 100ms ease-in-out;
+}
+.pricing-div:hover {
+  background-color: white;
+}
+.pricing-div button:hover {
+  color: white;
+  background-color: black;
 }
