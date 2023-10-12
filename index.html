@@ -10,6 +10,13 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <nav>
@@ -32,7 +39,12 @@
       <section class="section-1">
         <header><span>John</span><span>Doe.</span></header>
         <p id="section-1-text">Photographer and Web Designer.</p>
-        <img id="section-1-img" src="./src/sam.jpg" alt="John Doe" />
+        <img
+          loading="lazy"
+          id="section-1-img"
+          src="./src/sam.jpg"
+          alt="John Doe"
+        />
       </section>
       <section class="section-2" id="About">
         <h1>My Name</h1>
@@ -128,10 +140,79 @@
       <section class="comment-section">
         <h1>My Reputation</h1>
         <div class="comment-section-part">
-          <div class="comment-section-comments"></div>
-          <div class="comment-section-comments"></div>
+          <div class="comment-section-comments">
+            <img
+              loading="lazy"
+              src="./src/neom-unsplash.jpg"
+              alt="Chris Fox."
+              title="Chris Fox."
+            />
+            <p class="comment-section-comments-header">
+              <span>Chris Fox.</span> <span>CEO at Mighty Schools.</span>
+            </p>
+            <p><q>John Doe saved us from a web disaster.</q></p>
+          </div>
+          <div class="comment-section-comments">
+            <img
+              loading="lazy"
+              src="./src/kelly-unsplash.jpg"
+              alt="Rebecca Flex."
+              title="Rebecca Flex."
+            />
+            <p class="comment-section-comments-header">
+              <span>Rebecca Flex.</span> <span>CEO at Company.</span>
+            </p>
+            <p><q>No one is better than John Doe.</q></p>
+          </div>
+        </div>
+      </section>
+      <section class="myphoto-section" id="Photos">
+        <h1>My Photos</h1>
+        <div class="line"></div>
+        <div class="photos-part">
+          <div class="photos">
+            <img loading="lazy" src="./src/dave-unsplash.jpg" alt="" />
+            <img loading="lazy" src="./src/greg-unsplash.jpg" alt="" />
+            <img loading="lazy" src="./src/geraltyichen-unsplash.jpg" alt="" />
+          </div>
+          <div class="photos">
+            <img loading="lazy" src="./src/kelly-unsplash.jpg" alt="" />
+            <img loading="lazy" src="./src/xavier-unsplash.jpg" alt="" />
+            <img loading="lazy" src="./src/neom-unsplash.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="contact-section" id="Contact">
+        <h1>Contact Me</h1>
+        <div class="line"></div>
+        <div class="moreinfo">
+          <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Chicago, US</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-phone"></i>
+            <p>Phone: <a href="tel:+00 151515">+00 151515</a></p>
+          </div>
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+            <p>
+              Email: <a href="mailto:JohnDoe@gmail.com">JohnDoe@gmail.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="form-section">
+          <p>Let's get in touch. Send me a message:</p>
+          <form action="#" method="post" accept-charset="UTF-8">
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <input type="text" placeholder="Subject" />
+            <input type="text" placeholder="Message" />
+            <button type="submit">SEND MESSAGE</button>
+          </form>
         </div>
       </section>
     </main>
+    <footer></footer>
   </body>
 </html>
