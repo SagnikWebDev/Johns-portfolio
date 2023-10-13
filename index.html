@@ -6,7 +6,7 @@
     <title>john's PortFolio</title>
     <link
       rel="shortcut icon"
-      href="./src/sunder-unsplash.jpg"
+      href="./src/arno-unsplash.jpg"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./css/index.css" />
@@ -20,24 +20,47 @@
   </head>
   <body>
     <nav>
+      <img loading="lazy" id="nav-img" src="./src/sam.jpg" alt="John Doe" />
       <ul>
-        <li>
-          <p><a href="#">HOME</a></p>
+        <li id="only-black">
+          <p>
+            <a href="#"
+              ><span class="nav-icons"><i class="fa-solid fa-house"></i></span>
+              HOME</a
+            >
+          </p>
         </li>
         <li>
-          <p><a href="#About">ABOUT</a></p>
+          <p>
+            <a href="#About"
+              ><span class="nav-icons"><i class="fa-solid fa-user"></i></span>
+              ABOUT</a
+            >
+          </p>
         </li>
         <li>
-          <p><a href="#Photos">PHOTOS</a></p>
+          <p>
+            <a href="#Photos"
+              ><span class="nav-icons"><i class="fa-solid fa-image"></i></span>
+              PHOTOS</a
+            >
+          </p>
         </li>
         <li>
-          <p><a href="#Contact">CONTACT</a></p>
+          <p>
+            <a href="#Contact"
+              ><span class="nav-icons"><i class="fa-solid fa-user"></i></span>
+              CONTACT</a
+            >
+          </p>
         </li>
       </ul>
     </nav>
     <main>
       <section class="section-1">
-        <header><span>John</span><span>Doe.</span></header>
+        <header>
+          <span id="iam">I'm</span><span>John</span><span>Doe.</span>
+        </header>
         <p id="section-1-text">Photographer and Web Designer.</p>
         <img
           loading="lazy"
@@ -106,7 +129,9 @@
             <p class="non-head-text">Meeting</p>
           </div>
         </div>
-        <button type="submit">Download Resume</button>
+        <button type="submit">
+          <i class="fa-solid fa-download"></i> Download Resume
+        </button>
       </section>
       <section class="pricing-section">
         <h1 class="pricing-section-header">My Price</h1>
@@ -146,6 +171,7 @@
               src="./src/neom-unsplash.jpg"
               alt="Chris Fox."
               title="Chris Fox."
+              width="100px"
             />
             <p class="comment-section-comments-header">
               <span>Chris Fox.</span> <span>CEO at Mighty Schools.</span>
@@ -158,6 +184,7 @@
               src="./src/kelly-unsplash.jpg"
               alt="Rebecca Flex."
               title="Rebecca Flex."
+              width="100px"
             />
             <p class="comment-section-comments-header">
               <span>Rebecca Flex.</span> <span>CEO at Company.</span>
@@ -208,11 +235,37 @@
             <input type="email" placeholder="Email" />
             <input type="text" placeholder="Subject" />
             <input type="text" placeholder="Message" />
-            <button type="submit">SEND MESSAGE</button>
+            <button type="submit">
+              <i class="fa-solid fa-paper-plane"></i> SEND MESSAGE
+            </button>
           </form>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <h2>You can follow me</h2>
+      <ul>
+        <li>
+          <a href="https://github.com/" target="_blank"
+            ><i class="fa-brands fa-github"></i> Github</a
+          >
+        </li>
+        <li>
+          <a href="https://in.linkedin.com" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i> Linkedin</a
+          >
+        </li>
+        <li>
+          <a href="https://www.facebook.com" target="_blank"
+            ><i class="fa-brands fa-facebook"></i> Facebook</a
+          >
+        </li>
+        <li>
+          <a href="https://www.instagram.com" target="_blank"
+            ><i class="fa-brands fa-instagram"></i> Instagram</a
+          >
+        </li>
+      </ul>
+    </footer>
   </body>
 </html>
