@@ -58,7 +58,7 @@
     </nav>
     <main>
       <section class="section-1">
-        <header>
+        <header id="section-1-header">
           <span id="iam">I'm</span><span>John</span><span>Doe.</span>
         </header>
         <p id="section-1-text">Photographer and Web Designer.</p>
@@ -70,7 +70,7 @@
         />
       </section>
       <section class="section-2" id="About">
-        <h1>My Name</h1>
+        <h1 id="section-2-h1">My Name</h1>
         <div class="line"></div>
         <p id="section-2-text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
@@ -88,22 +88,22 @@
         </p>
       </section>
       <section class="section-3">
-        <h1 class="Skills">My Skills</h1>
+        <h1 id="Skills">My Skills</h1>
         <div id="bars-part">
           <div class="bar-section">
-            <p>Photography</p>
+            <p class="bar-section-text">Photography</p>
             <div class="bar">
               <div id="Photography-bar"></div>
             </div>
           </div>
           <div class="bar-section">
-            <p>Web Design</p>
+            <p class="bar-section-text">Web Design</p>
             <div class="bar">
               <div id="Web-Design-bar"></div>
             </div>
           </div>
           <div class="bar-section">
-            <p>Photoshop</p>
+            <p class="bar-section-text">Photoshop</p>
             <div class="bar">
               <div id="Photoshop-bar"></div>
             </div>
@@ -112,24 +112,24 @@
       </section>
       <section class="section-4">
         <div class="info">
-          <div>
+          <div class="info-div">
             <p class="head-text">11+</p>
             <p class="non-head-text">Partners</p>
           </div>
-          <div>
+          <div class="info-div">
             <p class="head-text">55+</p>
             <p class="non-head-text">Projects Done</p>
           </div>
-          <div>
+          <div class="info-div">
             <p class="head-text">89+</p>
             <p class="non-head-text">Happy Clients</p>
           </div>
-          <div>
+          <div class="info div">
             <p class="head-text">150+</p>
             <p class="non-head-text">Meeting</p>
           </div>
         </div>
-        <button type="submit">
+        <button id="section-4-button" type="submit">
           <i class="fa-solid fa-download"></i> Download Resume
         </button>
       </section>
@@ -137,28 +137,28 @@
         <h1 class="pricing-section-header">My Price</h1>
         <div class="pricing">
           <div class="pricing-div">
-            <h1>Basic</h1>
+            <h1 class="pricing-div-h1">Basic</h1>
             <p class="pricing-text">Web Design</p>
             <p class="pricing-text">Photography</p>
             <p class="pricing-text">5GB Storage</p>
             <p class="pricing-text">Mail Support</p>
-            <div>
-              <h2>$ 10</h2>
-              <p>per month</p>
+            <div class="pricing-div-div">
+              <h2 class="pricing-div-div-h2">$ 10</h2>
+              <p class="pricing-div-div-p">per month</p>
             </div>
-            <button type="submit">Sign up</button>
+            <button class="pricing-div-button" type="submit">Sign up</button>
           </div>
           <div class="pricing-div">
-            <h1>Pro</h1>
+            <h1 class="pricing-div-h1">Pro</h1>
             <p class="pricing-text">Web Design</p>
             <p class="pricing-text">Photography</p>
             <p class="pricing-text">50GB Storage</p>
             <p class="pricing-text">Endless Support</p>
-            <div>
-              <h2>$ 25</h2>
-              <p>per month</p>
+            <div class="pricing-div-div">
+              <h2 class="pricing-div-div-h2">$ 25</h2>
+              <p class="pricing-div-div-p">per month</p>
             </div>
-            <button type="submit">Sign up</button>
+            <button class="pricing-div-button" type="submit">Sign up</button>
           </div>
         </div>
       </section>
@@ -167,6 +167,7 @@
         <div class="comment-section-part">
           <div class="comment-section-comments">
             <img
+              class="comment-section-comments-img"
               loading="lazy"
               src="./src/neom-unsplash.jpg"
               alt="Chris Fox."
@@ -180,6 +181,7 @@
           </div>
           <div class="comment-section-comments">
             <img
+              class="comment-section-comments-img"
               loading="lazy"
               src="./src/kelly-unsplash.jpg"
               alt="Rebecca Flex."
@@ -198,33 +200,69 @@
         <div class="line"></div>
         <div class="photos-part">
           <div class="photos">
-            <img loading="lazy" src="./src/dave-unsplash.jpg" alt="" />
-            <img loading="lazy" src="./src/greg-unsplash.jpg" alt="" />
-            <img loading="lazy" src="./src/geraltyichen-unsplash.jpg" alt="" />
+            <img
+              class="photos-img"
+              loading="lazy"
+              src="./src/dave-unsplash.jpg"
+              alt=""
+            />
+            <img
+              class="photos-img"
+              loading="lazy"
+              src="./src/greg-unsplash.jpg"
+              alt=""
+            />
+            <img
+              class="photos-img"
+              loading="lazy"
+              src="./src/geraltyichen-unsplash.jpg"
+              alt=""
+            />
           </div>
           <div class="photos">
-            <img loading="lazy" src="./src/kelly-unsplash.jpg" alt="" />
-            <img loading="lazy" src="./src/xavier-unsplash.jpg" alt="" />
-            <img loading="lazy" src="./src/neom-unsplash.jpg" alt="" />
+            <img
+              class="photos-img"
+              loading="lazy"
+              src="./src/kelly-unsplash.jpg"
+              alt=""
+            />
+            <img
+              class="photos-img"
+              loading="lazy"
+              src="./src/xavier-unsplash.jpg"
+              alt=""
+            />
+            <img
+              class="photos-img"
+              loading="lazy"
+              src="./src/neom-unsplash.jpg"
+              alt=""
+            />
           </div>
         </div>
       </section>
       <section class="contact-section" id="Contact">
-        <h1>Contact Me</h1>
+        <h1 id="Contact-h1">Contact Me</h1>
         <div class="line"></div>
         <div class="moreinfo">
-          <div>
+          <div class="moreinfo-div">
             <i class="fa-solid fa-location-dot"></i>
             <p>Chicago, US</p>
           </div>
-          <div>
+          <div class="moreinfo-div">
             <i class="fa-solid fa-phone"></i>
-            <p>Phone: <a href="tel:+00 151515">+00 151515</a></p>
+            <p>
+              Phone:
+              <a class="moreinfo-div-a" href="tel:+00 151515">+00 151515</a>
+            </p>
           </div>
-          <div>
+          <div class="moreinfo-div">
             <i class="fa-solid fa-envelope"></i>
             <p>
-              Email: <a href="mailto:JohnDoe@gmail.com">JohnDoe@gmail.com</a>
+              Email:
+              <a class="moreinfo-div-a" href="mailto:JohnDoe@gmail.com"
+                >JohnDoe@gmail.com</a
+              >
             </p>
           </div>
         </div>
@@ -235,7 +273,7 @@
             <input type="email" placeholder="Email" />
             <input type="text" placeholder="Subject" />
             <input type="text" placeholder="Message" />
-            <button type="submit">
+            <button id="form-button" type="submit">
               <i class="fa-solid fa-paper-plane"></i> SEND MESSAGE
             </button>
           </form>
@@ -244,7 +282,7 @@
     </main>
     <footer>
       <h2>You can follow me</h2>
-      <ul>
+      <ul id="footer-ul">
         <li>
           <a href="https://github.com/" target="_blank"
             ><i class="fa-brands fa-github"></i> Github</a
