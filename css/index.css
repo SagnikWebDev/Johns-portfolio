@@ -15,6 +15,7 @@ body {
 nav {
   position: fixed;
   width: 100%;
+  padding-block: 5px;
   top: 0;
   left: 0;
   z-index: 999;
@@ -42,7 +43,7 @@ li {
 a {
   text-decoration: none;
   color: white;
-  padding-block: 7px;
+  padding-block: 12px;
   padding-inline: 10px;
   transition: all 50ms ease-in-out;
 }
@@ -98,7 +99,7 @@ footer {
 }
 /* section-2 part */
 .section-2 {
-  padding-top: 30px;
+  padding-top: 45px;
 }
 #section-2-h1 {
   font-size: 2.2em;
@@ -249,7 +250,7 @@ footer {
   padding-block: 20px;
 }
 .myphoto-section {
-  padding-top: 40px;
+  padding-top: 50px;
 }
 .photos-part {
   display: grid;
@@ -308,6 +309,7 @@ input {
     width: 120px;
     height: 100vh;
     background-color: rgb(58, 58, 58);
+    padding-top: 0px !important;
   }
   main,
   footer {
@@ -324,6 +326,7 @@ input {
     font-size: 30px;
   }
   ul {
+    /* min-height: 400px; */
     height: 60%;
     padding-block: 0;
     flex-direction: column;
@@ -362,5 +365,23 @@ input {
   }
   .photos-part {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-height: 446px) {
+  .nav-icons {
+    display: none;
+  }
+  #nav-img {
+    height: 120px;
+    object-fit: cover;
+  }
+  nav ul {
+    height: 40%;
+  }
+  .nav-li {
+    font-size: 8px;
+  }
+  .nav-anchor {
+    padding-block: 2px;
   }
 }
